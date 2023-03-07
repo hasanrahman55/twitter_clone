@@ -12,4 +12,10 @@ class UiConstants {
           color: Pallete.blueColor,
         ));
   }
+
+  static List<Widget> bottomTabBarPages = [
+    Text("data 1"),
+    Text("data 2"),
+    Text("data 3"),
+  ];
 }

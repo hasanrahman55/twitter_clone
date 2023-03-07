@@ -11,6 +11,7 @@ import 'package:twitter_clone/theme/pallete.dart';
 import '../../../common/common.dart';
 
 class LoginView extends ConsumerStatefulWidget {
+  static String route = "/LoginView";
   const LoginView({Key? key}) : super(key: key);
 
   @override
@@ -77,11 +78,8 @@ class _LoginViewState extends ConsumerState<LoginView> {
                                     color: Pallete.blueColor, fontSize: 16),
                                 recognizer: TapGestureRecognizer()
                                   ..onTap = () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                SignUpView()));
+                                    Navigator.pushNamed(
+                                        context, SignUpView.route);
                                   },
                               )
                             ]),
